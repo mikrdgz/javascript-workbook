@@ -1,4 +1,4 @@
-let cars = [
+let moreCars = [
     "Ford",
     "Suburu",
     "Fiat",
@@ -6,7 +6,7 @@ let cars = [
 
 ]
 
-let moreCars = [
+let cars = [
     "Jeep",
     "Tesla",
     "Porche",
@@ -14,18 +14,24 @@ let moreCars = [
 ]
 
 //console.log(cars.length);
+// console.log(moreCars.indexOf("Honda"));
+// console.log(cars.lastIndexOf("Ford"))
 
 
-// function mergeCars(){
-//    let totalCars =  cars.concat(moreCars);
+totalCars = [];
 
-//    console.log(totalCars);  
+let totalCars = cars.concat(moreCars);
+   console.log(totalCars);
+
+
+let carsInReverse = totalCars.reverse();
+console.log(carsInReverse);
+// let stringOfCars = totalCars.join();
+
+// function reverseCars () {
+// let carsInReverse = totalCars.reverse();
+// console.log(carsInReverse);
 // }
 
-// mergeCars();
-
-// console.log(moreCars.indexOf("Honda"));
-console.log(cars.lastIndexOf("Ford"))
-
-
+alert(carsInReverse.indexOf('1'));
 
