@@ -41,40 +41,69 @@
 // .forEach() requires a function to be passed into it as its first argument. Build a function that will add 2 and then use .forEach() to pass each number into your freshly built function. const numbers = [23, 45, 0 , 2, 8, 44, 100, 1, 3, 91, 34]
 
 
-'use strict'; 
+// 'use strict'; 
 
-let cars = [
-    "Ford",
-    "Suburu",
-    "Fiat",
-    "Toyota"
+// let cars = [
+//     "Ford",
+//     "Suburu",
+//     "Fiat",
+//     "Toyota"
 
-];
+// ];
 
-let moreCars = [
-    "Jeep",
-    "Tesla",
-    "Porche",
-    "Honda"
-];
+// let moreCars = [
+//     "Jeep",
+//     "Tesla",
+//     "Porche",
+//     "Honda"
+// ];
 
 
-console.log(cars.length);
+// console.log(cars.length);
 
-let totalCars = cars.concat(moreCars);
+// let totalCars = cars.concat(moreCars);
 
-console.log(totalCars.indexOf(Honda));
+// console.log(totalCars.indexOf(Honda));
 
-console.log(totalCars.lastIndexOf(Ford);
+// console.log(totalCars.lastIndexOf(Ford));
 
-let stringOfCars = totalCars.join();
+// let stringOfCars = totalCars.join();
 
-let totalCars = stringOfCars.split();
+// let totalCars = stringOfCars.split();
 
-let carsInReverse = totalCars.reverse();
+// let carsInReverse = totalCars.reverse();
 
-carsInReverse.sort();
+// carsInReverse.sort();
 
-alert(carsInReverse.indexOf('Fiat'));
+// alert(carsInReverse.indexOf('Fiat'));
+
+// let removedCars = [];
+//  carsInReverse.slice(-1, 1).push(removedCars);
+
+//  carsInReverse.splice(1,2,Ford,Honda);
+
+//  carsInReverse.splice(1,2,Ford,Honda).push(carsInReverse);
+
+// console.log(carsInReverse.pop());
+
+// console.log(carsInReverse.shift());
+
+// carsInReverse.unshift("Mercedes");
+
+let items = [23, 45, 0, 2];
+
+for (let i = 0; i < items.length; i++){
+   console.log(items[i] + 2);
+}
+
+
+const numbers = [23, 45, 0 , 2, 8, 44, 100, 1, 3, 91, 34];
+
+numbers.forEach ((i) => {
+numbers = i + 2;
+console.log(nums);
+});
+
+
 
 
