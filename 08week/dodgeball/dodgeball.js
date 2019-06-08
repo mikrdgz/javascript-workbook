@@ -123,4 +123,15 @@ function createPlayersList(){
 
   }
   
-
+  const assert = require('assert');
+  if (typeof describe === 'function') {
+        describe('Player', function(){
+        it('can become a player', function(){
+          let player1 = new Player('2', 'Charles Young', '55', 'welding', 'Omaha, Nebraska');
+          assert.equal(player1.id, '2');
+          assert.equal(player1.name, 'Charles Young');
+          assert.equal(player1.age, '55');
+          assert.equal(player1.skillSet, 'welding');
+        });
+    });
+  }
