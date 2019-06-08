@@ -54,7 +54,7 @@ const arrOfPeople = [
 
 
   
-  const listOfPlayers = []
+  const listOfPlayers = [];
   const blueTeam = []
   const redTeam = []
   
@@ -110,15 +110,17 @@ function createPlayersList(){
     console.log(clickedPlayer)
     console.log(`li ${id} was clicked!`)
 
-
-
-
   }
 
 
   const listDodgeballPlayers = () => {
-      const realPLayers = players.filter(player => player.isPlayer ===true);
+      const realPLayers = listPersons.filter(listPersons => listPersons.isPlayer === true);
+  
+      
+      realPLayers.map(function(arr){
+        players.innerHTML = arr.name + "<button>"+ "Add to blue team" + "</button>"+ "<button>"+ "Add to red team" + "</button>"
+})
 
-      console.log("realPlayers", realPLayers)
   }
+  
 
