@@ -51,6 +51,8 @@ const arrOfPeople = [
       placeBorn: "New Orleans, Louisiana"
     },
   ]
+
+
   
   const listOfPlayers = []
   const blueTeam = []
@@ -69,7 +71,7 @@ const arrOfPeople = [
         this.hasPaid = false;
         this.isHealthy = false;
         this.yearsExperience = false;
-        this.isPlayer = people.isPlayer;
+        this.isPlayer = false;
     }
   }
 
@@ -104,9 +106,13 @@ function createPlayersList(){
   }
   
   const makePlayer = (id) => {
-    const clickedPlayer = players.find(player => player.id === id).isPlayer = true;
+    const clickedPlayer = listPersons.find(listPersons => listPersons.id === id).isPlayer = true;
     console.log(clickedPlayer)
     console.log(`li ${id} was clicked!`)
+
+
+
+
   }
 
 
@@ -115,3 +121,4 @@ function createPlayersList(){
 
       console.log("realPlayers", realPLayers)
   }
+
